@@ -1,0 +1,5 @@
+[
+    {"id": 1, "question": "Cuál es el equipo Argentino con más copas libertadores?", "answer": "Independiente", "probableAnswers": ["Independiente", "Boca Juniors", "River Plate"]},
+    {"id": 2, "question": "Qué equipo fue el campeón de la copa libertadores 2018?", "answer": "River Plate", "probableAnswers": ["River Plate", "Boca Juniors", "Independiente"]},
+    {"id": 3, "question": "Cuál es el estadio más grande de Argentina y de america latina?", "answer": "Monumental", "probableAnswers": ["Bombonera", "Monumental", "Unico de la plata"]}
+]
