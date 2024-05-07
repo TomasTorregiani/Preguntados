@@ -3,6 +3,9 @@ import data from "../../data/db.json"
 import { useEffect, useRef, useState } from "react"
 import { setValue, unsetValue } from "../questionSlice"
 import { useNavigate } from "react-router-dom"
+import "toastify-js/src/toastify.css"
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 
 const Play = () => {
@@ -31,14 +34,15 @@ useEffect(() => {
 const handleSubmit = (e) => {
     e.preventDefault()
     if(answerField.current.value === data[index].answer){
-        alert(`Respuesta correcta, sumas 25 puntos!`)
+        toast.success("Respuesta correcta! sumas 25pts") 
         dispatch(setValue(25))
     } else if (answerField.current.value === ""){
-        alert(`Respuesta vacia`)
+        toast.warning(`Respuesta vacia`)
     } else {
-        alert(`Respuesta incorrecta! idiota`)
+        toast.error(`Respuesta incorrecta!`)
         dispatch(setValue(0))
     }
+    
 
     answerField.current.value = ""
 }
@@ -52,7 +56,9 @@ console.log("points", points);
 console.log("playerName", playerName);
 
 return (
-    <div className="container d-flex justify-content-center" style={{height:"350px"}}>
+    <>
+        <ToastContainer />
+        <div className="container d-flex justify-content-center" style={{height:"350px"}}>
         {ifQuestion === true && data[index] ? (
             <form className="form d-flex flex-column align-items-center justify-content-between p-2" onSubmit={handleSubmit}>
                 <label className="p-2 formLabel">Pregunta:</label>
@@ -62,9 +68,6 @@ return (
                     {data[index].probableAnswers.map((answer, i) => (
                         <option key={i} value={answer}>{answer}</option>
                     ))}
-                    {/* <option value={data[index].probableAnswers[0]}>{data[index].probableAnswers[0]}</option>
-                    <option value={data[index].probableAnswers[1]}>{data[index].probableAnswers[1]}</option>
-                    <option value={data[index].probableAnswers[2]}>{data[index].probableAnswers[2]}</option> */}
                 </select>
                 <button className="m-10 button" type="submit">Send</button>
                 <label className="formLabel">Points: {points}</label>
@@ -79,8 +82,8 @@ return (
             </div>
         )}
     </div>
-);
-
+    </>
+    )
 }
 
 export default Play;
