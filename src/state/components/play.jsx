@@ -42,8 +42,6 @@ const handleSubmit = (e) => {
         toast.error(`Respuesta incorrecta!`)
         dispatch(setValue(0))
     }
-    
-
     answerField.current.value = ""
 }
 
@@ -64,9 +62,9 @@ return (
                 <label className="p-2 formLabel">Pregunta:</label>
                 {data[index] && <label className="p-20 formLabel">{data[index].question}</label>}
                 
-                <select className="m-10 formInput" type="number" ref={answerField}>
+                <select className="m-10 formInput" style={{border: "3px solid darkblue", fontSize:"25px"}} type="number" ref={answerField}>
                     {data[index].probableAnswers.map((answer, i) => (
-                        <option key={i} value={answer}>{answer}</option>
+                        <option style={{fontSize: "25px", border: "3px solid darkblue"}} key={i} value={answer}>{answer}</option>
                     ))}
                 </select>
                 <button className="m-10 button" type="submit">Send</button>
