@@ -1,5 +1,12 @@
 [
     {"id": 1, "question": "Cuál es el equipo Argentino con más copas libertadores?", "answer": "Independiente", "probableAnswers": ["Independiente", "Boca Juniors", "River Plate"]},
     {"id": 2, "question": "Qué equipo fue el campeón de la copa libertadores 2018?", "answer": "River Plate", "probableAnswers": ["River Plate", "Boca Juniors", "Independiente"]},
-    {"id": 3, "question": "Cuál es el estadio más grande de Argentina y de america latina?", "answer": "Monumental", "probableAnswers": ["Bombonera", "Monumental", "Unico de la plata"]}
+    {"id": 3, "question": "Cuál es el estadio más grande de Argentina y de america latina?", "answer": "Monumental", "probableAnswers": ["Bombonera", "Monumental", "Unico de la plata"]},
+    {"id": 4, "question": "En que año se celebró el primer mundial de fútbol?", "answer": "1930", "probableAnswers": ["1926", "1930", "1934"]},
+    {"id": 5, "question": "Cuál es la selección que ganó más mundiales?", "answer": "Brasil", "probableAnswers": ["Italia", "Alemania", "Brasil"]},
+    {"id": 6, "question": "En qué año nació Lionel Andrés Messi?", "answer": "1987", "probableAnswers": ["1985", "1986", "1987"]},
+    {"id": 7, "question": "Cuántas champions league ganó Messi?", "answer": "4", "probableAnswers": ["4", "3", "5"]},
+    {"id": 8, "question": "Cuál es el equipo mas ganador de copas internacionales, a nivel mundial?", "answer": "Real Madrid", "probableAnswers": ["Bayern Munich", "Real Madrid", "Boca Juniors"]},
+    {"id": 9, "question": "En qué país se invtentó el fútbol?", "answer": "Inglaterra", "probableAnswers": ["Brasil", "Inglaterra", "Argentina"]},
+    {"id": 10, "question": "En que club italiano jugó Diego Armando Maradona?", "answer": "Nápoli", "probableAnswers": ["Verona", "Inter", "Nápoli"]}
 ]
